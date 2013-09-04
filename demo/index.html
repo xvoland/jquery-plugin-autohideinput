@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Demo: jQuery.plugin.AutoHideInput</title>
+    <!-- load jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="jquery-1.10.2.min.js">\x3C/script>')</script>
+    <!-- load plugin AutoHideInput -->
+    <script type="text/javascript" src="jquery.autohideinput.min.js"></script>
+</head>
+<body>
+<style>
+h1 {
+    color: #900;
+    font-size: 1.5em;
+    text-align: center;
+}
+form {
+    padding-top: 5%;
+    width: 450px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+input {
+    box-sizing: border-box;
+    padding: 3px;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+}
+</style>
+<script>
+$(document).ready(function(){
+    // binding Show button
+    $('#off').on('click', function() {
+        $('#loginname').hideinput('hide', false);
+    });
+
+
+    // binding Hide button
+    $('#onb').on('click', function() {
+        $('#loginname').hideinput('hide', true);
+    });
+});
+</script>
+<form>
+    <h1>Demo: jQuery.plugin.AutoHideInput</h1>
+    <label for="loginname">Login:
+        <input type="text" name="loginname" id="loginname" placeholder="login" data-hide="false">
+    </label>
+
+    <label for="loginpass">Password:
+        <input type="password" name="loginpass" id="loginpass" placeholder="password">
+    </label>
+</form>
+<div style="padding-top: 20px;">
+    <center>
+        <!-- Show button -->
+        <button id="off">Show Login when typing and focus is lost</button>
+        <!-- Hide button -->
+        <button id="onb">Show Login when typing and Hide when focus is lost</button>
+        
+        <p>* Field <b>Password</b> always has default behavior</p>
+    </center>
+</div>
+</body>
+</html>

@@ -10,10 +10,9 @@
 			  	"type",
 			  	"security",
           "placeholder",
-          "show/hide",
           "text"
   ],
-  "version": "v1.0.0",
+  "version": "v1.0.1",
   "main": "jquery.autohideinput.js",
   "dependencies": {
     "jquery": ">=1.7.0"

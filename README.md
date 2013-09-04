@@ -2,7 +2,7 @@
 
 **AutoHideInput** is a simple jQuery plugin that hides and shows the information entered by the user.
 
-When a HTML-designer sets the password field as type="password", thus not letting the user see what’s written inside the form field. This plugin helps the user to see what he input into this field. Once a field loses focus, all the typed symbols will be hidden.
+When a HTML-designer sets the password field as `type="password"`, thus not letting the user see what’s written inside the form field. This plugin helps the user to see what he input into this field. Once a field loses focus, all the typed symbols will be hidden.
 
 ## Features
 
@@ -23,7 +23,7 @@ Once you start using this plugin, your users will feel cared about them.
 
 To use it, simply. Select the form `<input>` element or elements. It works with any `<input>` field on the page, it can replace a single element, each element with a specific class/id/name, or property, or every `<input>` element.
 
-You can control the plugin using javascript or directly in the HTML-code using the tag *<input… `data-hide`="true">*
+You can control the plugin using javascript or directly in the HTML-code using the tag `data-hide`
 
 
 ## Installation
@@ -32,8 +32,7 @@ You can control the plugin using javascript or directly in the HTML-code using t
 
 1.Add to your page load jQuery and plugin:
 
-```
-
+```html
 	<head>
 	… 
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
@@ -44,8 +43,7 @@ You can control the plugin using javascript or directly in the HTML-code using t
 
 2.Use the plugin:
 
-```
-
+```js
 	// to enable the plugin
 	$('#id').hideinput('hide', true);
 	
@@ -61,8 +59,7 @@ You can control the plugin using javascript or directly in the HTML-code using t
 
 1.Add to your page load jQuery and plugin:
 
-```
-
+```html
 	<head>
 	… 
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
@@ -73,19 +70,21 @@ You can control the plugin using javascript or directly in the HTML-code using t
 
 2.In your HTML-code:
 
-```<input type="text" name="loginname" id="loginname" placeholder="login" data-hide="true">```
+```html
+<input type="text" name="loginname" id="loginname" placeholder="login" data-hide="true">
+```
 
 * `data-hide="true"` - can take two values `true` or `false`, respectively on/off plugin for the current field
 
-## List Of Files
 
-- AutoHideInput plugin - jquery.autohideinput.js
-- AutoHideInput plugin (minified version) — jquery.autohideinput.min.js
-- Example/Demo - index.html
-- jQuery v1.10.2 - jquery-1.10.2.min.js
-- ReadMe (Markdown) - ReadMe.md
-- ReadMe (HTML) - ReadMe.html
+# Contributing
 
-## Thanks!
-Thank you for using AutoHideInput jQuery plugin!
-— Vitalii Tereshchuk
+If you'd like to contribute to this project, create a branch and send a pull request for that branch. Lint and test your code.
+
+
+# License
+
+Copyright © 2013 Vitalii Tereshchuk. Licensed under the MIT and GPL licenses.
+
+#### About me and welcome
+I'm an independent developer and researcher in web development. Many of you I'll be happy to see on [my website](http://dotoca.net)

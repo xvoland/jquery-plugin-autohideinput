@@ -1,6 +1,7 @@
 {
   "name": "autohideinput",
-  "title": "AutoHideInput is a simple jQuery plugin that hides and shows the information entered by the user",
+  "title": "AutoHideInput is a simple jQuery plugin for additional security for secure fields",
+  "description": "AutoHideInput is a simple jQuery plugin that hides and shows the information entered by the user",
   "keywords": [
 			  	"jquery",
 			  	"plugin",
@@ -12,7 +13,7 @@
           "placeholder",
           "text"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "jquery.autohideinput.js",
   "dependencies": {
     "jquery": ">=1.7.0"
@@ -26,5 +27,6 @@
           "url": "http://dotoca.net"
       },
   "homepage": "https://github.com/xvoland/jquery-plugin-autohideinput",
-  "licenses": [{"type": "MIT", "url": "http://opensource.org/licenses/mit-license.php"}, {"type": "GPL", "url": "http://www.gnu.org/licenses/gpl-3.0.txt"}]
+  "licenses": [{"type": "MIT", "url": "http://opensource.org/licenses/mit-license.php"}, {"type": "GPL", "url": "http://www.gnu.org/licenses/gpl-3.0.txt"}],
+  "files": ["jquery.autohideinput.js"]
 }

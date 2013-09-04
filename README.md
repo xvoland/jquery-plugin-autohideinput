@@ -4,6 +4,12 @@
 
 When a HTML-designer sets the password field as `type="password"`, thus not letting the user see what’s written inside the form field. This plugin helps the user to see what he input into this field. Once a field loses focus, all the typed symbols will be hidden.
 
+
+## Online Demo
+
+See demo [here](http://xvoland.github.io/jquery-plugin-autohideinput)
+
+
 ## Features
 
 - Show or hide important information when you enter it

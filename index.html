@@ -1,81 +1,82 @@
-<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Jquery-plugin-autohideinput by xvoland</title>
+<head>
+<title>Demo: jQuery.plugin.AutoHideInput</title>
+    <!-- load jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="jquery-1.10.2.min.js">\x3C/script>')</script>
+    <!-- load plugin AutoHideInput -->
+    <script type="text/javascript" src="https://rawgithub.com/xvoland/jquery-plugin-autohideinput/master/jquery.autohideinput.min.js"></script>
+</head>
+<body>
+<style>
+h1 {
+    color: #900;
+    font-size: 1.5em;
+    text-align: center;
+}
+form {
+    padding-top: 5%;
+    width: 450px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Jquery-plugin-autohideinput</h1>
-        <p>Auto Hide Input (jQuery Plugin)</p>
+input {
+    box-sizing: border-box;
+    padding: 3px;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+}
+</style>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        <p class="view"><a href="https://github.com/xvoland/jquery-plugin-autohideinput">View the Project on GitHub <small>xvoland/jquery-plugin-autohideinput</small></a></p>
+  ga('create', 'UA-'+'42223366'+'-2', 'x'+'voland.github.io');
+  ga('send', 'pageview');
+</script>
+<!-- /Google Analytics -->
+<script>
+$(document).ready(function(){
+    // binding Show button
+    $('#off').on('click', function() {
+        $('#loginname').hideinput('hide', false);
+    });
 
+    // binding Hide button
+    $('#onb').on('click', function() {
+        $('#loginname').hideinput('hide', true);
+    });
+});
+</script>
+<form>
+    <h1>Demo: jQuery.plugin.AutoHideInput</h1>
+    <label for="loginname">Login:
+        <input type="text" name="loginname" id="loginname" placeholder="login" data-hide="false">
+    </label>
 
-        <ul>
-          <li><a href="https://github.com/xvoland/jquery-plugin-autohideinput/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/xvoland/jquery-plugin-autohideinput/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/xvoland/jquery-plugin-autohideinput">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/xvoland">xvoland</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-42223366-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-  </body>
+    <label for="loginpass">Password:
+        <input type="password" name="loginpass" id="loginpass" placeholder="password">
+    </label>
+</form>
+<div style="padding-top: 20px;">
+    <center>
+        <!-- Show button -->
+        <button id="off">Show Login when typing and focus is lost</button>
+        <!-- Hide button -->
+        <button id="onb">Show Login when typing and Hide when focus is lost</button>
+        
+        <p>* Field <b>Password</b> always has default behavior</p>
+    </center>
+</div>
+<div style="font-size:.75em;text-align:center;">
+Welcome to <a href="http://dotoca.net/" title="http://dotoca.net">my personal site</a> and <a href="https://github.com/xvoland/jquery-plugin-svg-style">Github page</a>. <g:plusone size="small" count="false" href="https://github.com/xvoland/jquery-plugin-svg-style"></g:plusone>
+Licensed under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT and GPL licenses.</a>
+<p>If you're looking for a cheap ($5/month - VPS) and fast hosting with SSD <a href="http://goo.gl/Tb0QDf" target="_blank">go here</a>.</p>
+</div>
+</body>
 </html>

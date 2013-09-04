@@ -1,0 +1,28 @@
+{
+  "name": "jquery-autohideinput",
+  "title": "AutoHideInput is a simple jQuery plugin that hides and shows the information entered by the user",
+  "keywords": [
+			  	"jquery",
+			  	"plugin",
+			  	"input",
+			  	"password",
+			  	"html5",
+			  	"type",
+			  	"security",
+          "placeholder",
+          "show/hide",
+          "text"
+  ],
+  "version": "v1.0.0",
+  "main": "jquery.autohideinput.js",
+  "dependencies": {
+    "jquery": ">=1.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xvoland/jquery-plugin-autohideinput.git"
+  },
+  "author": ["Vitalii Tereshchuk"],
+  "homepage": "https://github.com/xvoland/jquery-plugin-autohideinput",
+  "license": "MIT"
+}

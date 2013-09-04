@@ -1,18 +1,8 @@
 {
   "name": "autohideinput",
   "title": "AutoHideInput is a simple jQuery plugin for additional security for secure fields",
-  "description": "AutoHideInput is a simple jQuery plugin that hides and shows the information entered by the user",
-  "keywords": [
-			  	"jquery",
-			  	"plugin",
-			  	"input",
-			  	"password",
-			  	"html5",
-			  	"type",
-			  	"security",
-          "placeholder",
-          "text"
-  ],
+  "description": "AutoHideInput is a simple jQuery plugin that hides and shows the information entered by user",
+  "keywords": ["jquery", "plugin", "input", "password", "html5", "type", "security", "placeholder", "text"],
   "version": "1.0.3",
   "main": "jquery.autohideinput.js",
   "dependencies": {
@@ -28,5 +18,7 @@
       },
   "homepage": "https://github.com/xvoland/jquery-plugin-autohideinput",
   "licenses": [{"type": "MIT", "url": "http://opensource.org/licenses/mit-license.php"}, {"type": "GPL", "url": "http://www.gnu.org/licenses/gpl-3.0.txt"}],
+  "docs": "https://github.com/xvoland/jquery-plugin-autohideinput",
+  "demo": "http://xvoland.github.io/jquery-plugin-autohideinput",
   "files": ["jquery.autohideinput.js"]
 }

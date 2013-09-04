@@ -1,6 +1,6 @@
 {
   "name": "autohideinput",
-  "title": "AutoHideInput is a simple jQuery plugin for additional security for secure fields",
+  "title": "AutoHideInput - additional security for secure fields",
   "description": "AutoHideInput is a simple jQuery plugin that hides and shows the information entered by user",
   "keywords": ["jquery", "plugin", "input", "password", "html5", "type", "security", "placeholder", "text"],
   "version": "1.0.3",

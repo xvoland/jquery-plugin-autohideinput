@@ -22,12 +22,12 @@
         var $this = $(this);
 
         // blur
-        $this.on('blur', function() {
+        $this.on("blur", function() {
             $this.attr("type", "password");
         });
 
         // focusin
-        $this.on('focusin', function() {
+        $this.on("focusin", function() {
             $this.attr("type", "text");
         });
     };
@@ -49,7 +49,7 @@
                 $this.hideinput();
             } else {
                 $this.attr("type", "text");
-                $this.off('focusin blur');
+                $this.off("focusin blur");
             }
         }
 
@@ -59,12 +59,12 @@
         if (methods[method]) {
             // run sub-function
             return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
-        } else if (typeof method === 'object' || !method) {
+        } else if (typeof method === "object" || !method) {
             // run init() function
             return methods.init.apply(this, arguments);
         } else {
             // method not found
-            $.error('Method "' + method + '" not found in jQuery.AutoHideInput');
+            $.error("Method '" + method + "' not found in jQuery.AutoHideInput");
         }
     };
 

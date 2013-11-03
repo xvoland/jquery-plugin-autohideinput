@@ -10,7 +10,6 @@ See demo [here](http://xvoland.github.io/jquery-plugin-autohideinput)
 
 ![Screenshot](https://rawgithub.com/xvoland/jquery-plugin-autohideinput/master/demo/autohideinput.gif)
 
-
 ## Features
 
 - Show or hide important information when you enter it

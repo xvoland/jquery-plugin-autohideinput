@@ -5,7 +5,7 @@
  *
  * Copyright (c) 2013, Vitalii Tereshchuk http://dotoca.net/
  *
- * @modified  2013/09/27
+ * @modified  2014/01/09
  * @requires  jQuery 1.9.x or later
  * @version   2.0.0
  * @author    Vitalii Tereshchuk

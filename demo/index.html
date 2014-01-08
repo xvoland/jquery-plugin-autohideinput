@@ -1,13 +1,20 @@
 <html>
 <head>
 <title>Demo: jQuery.plugin.AutoHideInput</title>
-    <!-- load jQuery -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="https://raw.github.com/xvoland/jquery-plugin-autohideinput/master/demo/jquery-1.10.2.min.js">\x3C/script>')</script>
+    <!-- 
+        Zepto by default and jQuery as a fallback.
+        See: http://zeptojs.com/#download
+
+        The Zepto build here is custom because we need the
+        data module to be included.
+    -->
+    <script>document.write('<script src=' + ('__proto__' in {} ? 'zepto.min' : '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min') + '.js <\/script>')</script>
+
     <!-- load plugin AutoHideInput -->
-    <script type="text/javascript" src="https://raw.github.com/xvoland/jquery-plugin-autohideinput/master/jquery.autohideinput.min.js"></script>
+    <script type="text/javascript" src="../jquery.autohideinput.js"></script>
 </head>
 <body>
+<script>window.Zepto || document.write('<script src="jquery-1.10.2.min.js">\x3C/script>');</script>
 <style>
 h1 {
     color: #900;

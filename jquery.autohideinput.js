@@ -7,7 +7,7 @@
  *
  * @modified  2013/09/27
  * @requires  jQuery 1.9.x or later
- * @version   1.0.0
+ * @version   2.0.0
  * @author    Vitalii Tereshchuk
  * @link      http://dotoca.net/jquery.hideinput
  * @license
@@ -15,7 +15,17 @@
  * Thanks to Vitalii Tereshchuk (http://dotoca.net/)
  */
 
-;(function($) {
+
+(function (factory, global) {
+  if (typeof define === 'function' && define.amd) {
+    // AMD. Register as an anonymous module.
+    // To use Zepto, map Zepto to the the name 'jquery' in your paths config
+    define(['jquery'], factory);
+  } else {
+    // Browser globals
+    factory(global.jQuery || global.Zepto);
+  }
+}(function($) {
 
     autohideinput = function() {
         // context
@@ -73,4 +83,4 @@
         $('input[data-hide="true"]').hideinput();
     });
 
-})(jQuery);
+}, this));

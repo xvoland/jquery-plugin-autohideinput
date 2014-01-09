@@ -1,13 +1,21 @@
 <html>
 <head>
 <title>Demo: jQuery.plugin.AutoHideInput</title>
-    <!-- load jQuery -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="jquery-1.10.2.min.js">\x3C/script>')</script>
+    <meta name="google-site-verification" content="ea0XimDtOtvMG_fJk7Gpts5_DafQ3WKtrbXL2Xc2pFw">
+    <!-- 
+        Zepto by default and jQuery as a fallback.
+        See: http://zeptojs.com/#download
+
+        The Zepto build here is custom because we need the
+        data module to be included.
+    -->
+    <script>document.write('<script src=' + ('__proto__' in {} ? 'zepto.min' : '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min') + '.js <\/script>')</script>
+
     <!-- load plugin AutoHideInput -->
-    <script type="text/javascript" src="https://rawgithub.com/xvoland/jquery-plugin-autohideinput/master/jquery.autohideinput.min.js"></script>
+    <script type="text/javascript" src="jquery.autohideinput.js"></script>
 </head>
 <body>
+<script>window.Zepto || document.write('<script src="jquery-1.10.2.min.js">\x3C/script>');</script>
 <style>
 h1 {
     color: #900;
@@ -29,23 +37,13 @@ input {
     border: 1px solid #ccc;
 }
 </style>
-<!-- Google Analytics -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-'+'42223366'+'-2', 'x'+'voland.github.io');
-  ga('send', 'pageview');
-</script>
-<!-- /Google Analytics -->
 <script>
 $(document).ready(function(){
     // binding Show button
     $('#off').on('click', function() {
         $('#loginname').hideinput('hide', false);
     });
+
 
     // binding Hide button
     $('#onb').on('click', function() {
@@ -72,11 +70,6 @@ $(document).ready(function(){
         
         <p>* Field <b>Password</b> always has default behavior</p>
     </center>
-</div>
-<div style="font-size:.75em;text-align:center;">
-Welcome to <a href="http://dotoca.net/" title="http://dotoca.net">my personal site</a> and <a href="https://github.com/xvoland/jquery-plugin-svg-style">Github page</a>. <g:plusone size="small" count="false" href="https://github.com/xvoland/jquery-plugin-svg-style"></g:plusone>
-Licensed under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT and GPL licenses.</a>
-<p>If you're looking for a cheap ($5/month - VPS) and fast hosting with SSD <a href="http://goo.gl/Tb0QDf" target="_blank">go here</a>.</p>
 </div>
 </body>
 </html>

@@ -5,29 +5,20 @@
  *
  * Copyright (c) 2013, Vitalii Tereshchuk http://dotoca.net/
  *
- * @modified  2014/01/09
- * @requires  jQuery 1.9.x or later
- * @version   2.0.0
+ * @modified  2013/01/10
+ * @requires  jQuery 1.7.x or later
+ * @version   2.0.1
  * @author    Vitalii Tereshchuk
- * @link      http://dotoca.net/jquery.hideinput
+ * @link      http://dotoca.net/jquery-autohideinput/
  * @license
  *
  * Thanks to Vitalii Tereshchuk (http://dotoca.net/)
  */
+;(function($) {
 
+    var defaults = "text";
 
-(function (factory, global) {
-  if (typeof define === 'function' && define.amd) {
-    // AMD. Register as an anonymous module.
-    // To use Zepto, map Zepto to the the name 'jquery' in your paths config
-    define(['jquery'], factory);
-  } else {
-    // Browser globals
-    factory(global.jQuery || global.Zepto);
-  }
-}(function($) {
-
-    autohideinput = function() {
+    autoHideInput = function(params) {
         // context
         var $this = $(this);
 
@@ -45,7 +36,7 @@
     var methods = {
         init: function(params) {
             // default for each element
-            return this.each(autohideinput);
+            return this.each(autoHideInput);
         },
         hide: function(isHide) {
             // context
@@ -61,6 +52,9 @@
                 $this.attr("type", "text");
                 $this.off("focusin blur");
             }
+        },
+        destroy: function() {
+            $(this).off('blur focusin');
         }
 
     };
@@ -83,4 +77,4 @@
         $('input[data-hide="true"]').hideinput();
     });
 
-}, this));
+})(window.jQuery || window.Zepto || window.$);

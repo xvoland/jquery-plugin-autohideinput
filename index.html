@@ -2,20 +2,15 @@
 <head>
 <title>Demo: jQuery.plugin.AutoHideInput</title>
     <meta name="google-site-verification" content="ea0XimDtOtvMG_fJk7Gpts5_DafQ3WKtrbXL2Xc2pFw">
-    <!-- 
-        Zepto by default and jQuery as a fallback.
-        See: http://zeptojs.com/#download
 
-        The Zepto build here is custom because we need the
-        data module to be included.
-    -->
-    <script>document.write('<script src=' + ('__proto__' in {} ? 'zepto.min' : '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min') + '.js <\/script>')</script>
+    <!-- <script type="text/javascript" src="jquery-1.10.2.min.js"></script> -->
+    <script type="text/javascript" src="zepto.min.js"></script>
 
     <!-- load plugin AutoHideInput -->
     <script type="text/javascript" src="jquery.autohideinput.js"></script>
+
 </head>
 <body>
-<script>window.Zepto || document.write('<script src="jquery-1.10.2.min.js">\x3C/script>');</script>
 <style>
 h1 {
     color: #900;
@@ -37,20 +32,6 @@ input {
     border: 1px solid #ccc;
 }
 </style>
-<script>
-$(document).ready(function(){
-    // binding Show button
-    $('#off').on('click', function() {
-        $('#loginname').hideinput('hide', false);
-    });
-
-
-    // binding Hide button
-    $('#onb').on('click', function() {
-        $('#loginname').hideinput('hide', true);
-    });
-});
-</script>
 <form>
     <h1>Demo: jQuery.plugin.AutoHideInput</h1>
     <label for="loginname">Login:
@@ -71,5 +52,33 @@ $(document).ready(function(){
         <p>* Field <b>Password</b> always has default behavior</p>
     </center>
 </div>
+
+<script>
+var lib;
+if (window.jQuery) {
+    lib = 'jQuery';
+}
+if (window.Zepto) {
+    lib = 'Zepto';
+}
+
+$('body').append('<p>Using: <code>' + lib + '</code></p>')
+
+
+
+$(document).ready(function(){
+    // binding Show button
+    $('#off').on('click', function() {
+        $('#loginname').hideinput('hide', false);
+    });
+
+    // binding Hide button
+    $('#onb').on('click', function() {
+        $('#loginname').hideinput('hide', true);
+    });
+});
+</script>
+
+
 </body>
 </html>

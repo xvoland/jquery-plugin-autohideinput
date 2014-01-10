@@ -3,7 +3,7 @@
   "title": "AutoHideInput - is a jQuery and Zepto plugin for hiding and showing secure fields",
   "description": "AutoHideInput is a simple jQuery and Zepto plugin for hiding and showing secure fields. That hides and shows the information entered by user",
   "keywords": ["jquery", "zepto", "plugin", "input", "masking", "password", "html5", "type", "security", "placeholder", "text"],
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "jquery.autohideinput.js",
   "dependencies": {
     "jquery": ">=1.7.0"

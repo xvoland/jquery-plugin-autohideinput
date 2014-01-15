@@ -5,9 +5,9 @@
  *
  * Copyright (c) 2013, Vitalii Tereshchuk http://dotoca.net/
  *
- * @modified  2013/01/10
+ * @modified  2013/01/15
  * @requires  jQuery 1.7.x or later
- * @version   2.0.1
+ * @version   2.0.2
  * @author    Vitalii Tereshchuk
  * @link      http://dotoca.net/jquery-autohideinput/
  * @license

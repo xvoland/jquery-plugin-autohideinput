@@ -10,6 +10,8 @@ When a HTML-designer sets the password field as `type="password"`, thus not lett
 
 ![Screenshot](https://rawgithub.com/xvoland/jquery-plugin-autohideinput/master/demo/autohideinput.gif)
 
+*****
+
 ### Support mobile devices
 
 ![iPhone iOS6](https://rawgithub.com/xvoland/jquery-plugin-autohideinput/master/demo/ios.png)

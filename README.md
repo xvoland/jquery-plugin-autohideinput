@@ -10,6 +10,8 @@ When a HTML-designer sets the password field as `type="password"`, thus not lett
 
 ![Screenshot](https://rawgithub.com/xvoland/jquery-plugin-autohideinput/master/demo/autohideinput.gif)
 
+![iPhone](https://rawgithub.com/xvoland/jquery-plugin-autohideinput/master/demo/ios.png)
+
 ## Features
 - show/hide important information when you enter
 - additional security for secure fields when you enter
@@ -124,7 +126,7 @@ If you'd like to contribute to this project, create a branch and send a pull req
 #Funding
 I’ll continue to work and improve the script features regardless of the outcome of funding, because it's rewarding to see that people are using it and it does the job for them. Still I would appreciate your support in covering some of the expenses with the domain hosting and programming hours which are taken from my family time.
 
-[Ping me](adv@dotoca.net) if you want to finance the project.
+[Ping me](mailto:adv@dotoca.net) if you want to finance the project.
 
 
 # License

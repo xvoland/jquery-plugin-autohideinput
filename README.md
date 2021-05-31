@@ -130,15 +130,17 @@ More info [on MSDN](http://msdn.microsoft.com/en-us/library/windows/apps/hh46577
 If you'd like to contribute to this project, create a branch and send a pull request for that branch. Lint and test your code.
 
 
-#Funding
+# Funding
 I’ll continue to work and improve the script features regardless of the outcome of funding, because it's rewarding to see that people are using it and it does the job for them. Still I would appreciate your support in covering some of the expenses with the domain hosting and programming hours which are taken from my family time.
 
-[Ping me](mailto:adv@dotoca.net) if you want to finance the project.
+Donate any amount for my projects <a href='https://paypal.me/xvoland'>https://paypal.me/xvoland</a>
 
+
+<a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9D4YBRWH8QURU'><img alt='Click here to lend your support to Extractor and make a donation!' src='https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif' border='0' /></a>
 
 # License
 Copyright © 2013 Vitalii Tereshchuk. Licensed under the MIT and GPL licenses.
 
 
 #### About me and welcome
-I'm an independent developer and researcher in web development. Many of you I'll be happy to see on [my website](http://dotoca.net)
+I'm an independent developer and researcher in web development. Many of you I'll be happy to see on [my personal website](http://dotoca.net)
